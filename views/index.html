@@ -1,0 +1,52 @@
+{% extends "layout.html"%}
+
+{% block content %}
+
+
+
+<section id="intro">
+
+  <header>
+    <img src="logo_casa_criativa.png" alt="Imagem da Logomarca">
+  </header>
+
+  <main>
+
+      <p>
+        Ficar em casa por períodos longos, não deve ser fácil ?
+      </p>  
+  
+      <p>
+        Por isso, iremos catalogar idéias, <strong>brincadeiras, jogos, filmes, 
+        livros, cursos, dicas </strong> e tudo que for necessário para tornar este momento 
+        mais interessante.
+      </p>
+  
+      <p>
+        Comece clicando em ver idéias para ver o que já temos cadastrado e contribua
+        adicionando a sua idéia
+      </p>
+  </main>
+
+
+  <section id="buttons">
+    <button onclick="onOff()">+ Adicionar Idéia</button>
+    <a href="/ideias" class="button">Ver Idéias</a>
+  </section>
+
+  <footer>
+    Com ❤️ <a href="http://github.com/ricardolevi2005" target="_blank">Ricardo Levi</a>
+  </footer>
+
+ 
+
+</section>
+
+
+<section id="ideas">
+
+  {% include "all_Ideas.html" %}
+  
+</section>
+
+{% endblock %}
